@@ -1,0 +1,4 @@
+FROM registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
+COPY target/hello-service-1.0.0.jar /home/jboss/test.jar
+ENTRYPOINT ["java", "-jar", "/home/jboss/test.jar"]
+
